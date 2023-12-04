@@ -56,8 +56,9 @@
 ##### 헤더(header) 영역
 
 - 풀스크린 메뉴 만들기https://tympanus.net/codrops/2014/02/06/fullscreen-overlay-effects/
-- 밑줄 만들기
+- 메뉴 hover시 밑줄 만들기
 
 ##### 인트로(intro) 영역
 
 - vh,vw,rem등 상대적인 단위들을 사용해 반응형 디자인을 구현
+- JavaScript를 사용하여 스크롤 이벤트를 감지하고, 스크롤에 따라 이미지를 회전시키는 동작 구현
