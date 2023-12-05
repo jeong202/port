@@ -8,11 +8,13 @@
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
 /* intro__title */
 .intro__title {
   color: var(--sub-color);
   text-align: center;
 }
+
 .intro__title .title1 {
   font-size: 13vw;
   line-height: 1;
@@ -20,12 +22,14 @@
   white-space: nowrap;
   margin-bottom: -1vw;
 }
+
 .intro__title .title2 {
   font-size: 15vw;
   line-height: 1;
   font-weight: 800;
   white-space: nowrap;
 }
+
 .intro__title .title3 {
   font-size: 8vw;
   line-height: 1;
@@ -35,6 +39,7 @@
   font-weight: bold;
   font-style: italic;
 }
+
 .intro__title .title4 {
   margin-top: 50px;
   font-size: 1vw;
@@ -45,20 +50,24 @@
   font-weight: 300;
   letter-spacing: 0.15rem;
 }
+
 /* intro__about */
 .intro__about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .intro__about .about__img1 {
   margin-top: 10vw;
   width: 3vh;
   height: 3vh;
 }
+
 .rotating-img {
   transition: transform 0.5s ease-in-out;
 }
+
 .about__text {
   margin-top: 10vw;
   display: flex;
@@ -71,23 +80,26 @@
 }
 
 .about__img2 {
-  margin-top: 10vw;
+  margin: 10vw 0;
   width: 20vh;
   height: 20vh;
   position: relative;
 }
+
 @media (max-width: 600px) {
   .about__img2 {
     width: 15vh;
     height: 15vh;
   }
 }
+
 @media (max-width: 410px) {
   .about__img2 {
     width: 10vh;
     height: 10vh;
   }
 }
+
 .text {
   line-height: 1;
   font-size: 1.2vw;

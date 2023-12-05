@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 10000;
 }
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -14,17 +15,20 @@
   font-family: "Abel";
   letter-spacing: 0.2rem;
 }
+
 .header__logo {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1;
 }
+
 .header__nav {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1;
   cursor: pointer;
 }
+
 /* 풀스크린 메뉴 */
 /* Overlay style */
 .overlay {
@@ -113,6 +117,7 @@
   -webkit-transition: height 0.2s;
   transition: height 0.2s;
 }
+
 .overlay ul li a:hover::before,
 .overlay ul li a:focus::before,
 .overlay ul li a:hover::after,
@@ -142,6 +147,7 @@
     height: 70%;
     font-size: 34px;
   }
+
   .overlay ul li {
     min-height: 34px;
   }
