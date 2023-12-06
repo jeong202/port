@@ -4,7 +4,10 @@
   top: 0;
   width: 100%;
   z-index: 10000;
+  background-color: #00000069;
+  ;
 }
+
 
 .header__inner {
   display: flex;
@@ -14,6 +17,7 @@
   text-transform: uppercase;
   font-family: "Abel";
   letter-spacing: 0.2rem;
+  backdrop-filter: blur(15px);
 }
 
 .header__logo {

@@ -1,38 +1,45 @@
-.intro__inner {
-  margin-top: 5vw;
-  width: 100%;
-  height: 100%;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
+#intro {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
-/* intro__title */
+#animation-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .intro__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
   color: var(--sub-color);
   text-align: center;
 }
 
 .intro__title .title1 {
-  font-size: 13vw;
-  line-height: 1;
+  font-size: 11vw;
+  line-height: 0.7;
   font-weight: 800;
   white-space: nowrap;
-  margin-bottom: -1vw;
 }
 
 .intro__title .title2 {
-  font-size: 15vw;
+  font-size: 13vw;
   line-height: 1;
   font-weight: 800;
   white-space: nowrap;
 }
 
 .intro__title .title3 {
-  font-size: 8vw;
-  line-height: 1;
+  font-size: 6vw;
+  line-height: 0.5;
   font-weight: 800;
   white-space: nowrap;
   font-family: "PP Hatton";
@@ -41,71 +48,11 @@
 }
 
 .intro__title .title4 {
-  margin-top: 50px;
-  font-size: 1vw;
-  line-height: 1;
-  font-weight: 800;
+  font-size: 0.6vw;
+  line-height: 5;
   white-space: nowrap;
   font-family: "Roboto";
   font-weight: 300;
   letter-spacing: 0.15rem;
-}
-
-/* intro__about */
-.intro__about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro__about .about__img1 {
-  margin-top: 10vw;
-  width: 3vh;
-  height: 3vh;
-}
-
-.rotating-img {
-  transition: transform 0.5s ease-in-out;
-}
-
-.about__text {
-  margin-top: 10vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  word-break: keep-all;
-  font-family: "Gmarket Sans TTF";
-  font-weight: 300;
-  font-size: 1.2vw;
-}
-
-.about__img2 {
-  margin: 10vw 0;
-  width: 20vh;
-  height: 20vh;
-  position: relative;
-}
-
-@media (max-width: 600px) {
-  .about__img2 {
-    width: 15vh;
-    height: 15vh;
-  }
-}
-
-@media (max-width: 410px) {
-  .about__img2 {
-    width: 10vh;
-    height: 10vh;
-  }
-}
-
-.text {
-  line-height: 1;
-  font-size: 1.2vw;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 10%;
 }
