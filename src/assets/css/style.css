@@ -8,6 +8,7 @@
 /* section */
 @import url(section/header.css);
 @import url(section/intro.css);
+@import url(section/about.css);
 @import url(section/port.css);
 @import url(section/tech.css);
 @import url(section/contact.css);
