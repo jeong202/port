@@ -25,7 +25,7 @@ export function intro() {
     var geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
     var materialGreen = new THREE.MeshBasicMaterial({
         transparent: true,
-        color: 0xFF8C00,
+        color: 0xFFFF00,
         opacity: 0.4,
         side: THREE.DoubleSide
     });
