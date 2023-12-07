@@ -150,30 +150,15 @@
     });
   </script>
   <script>
-    // GSAP 애니메이션을 사용하기 위해 플러그인을 등록합니다.
-    gsap.registerPlugin(ScrollTrigger);
+    // GSAP 애니메이션 코드
+    gsap.set(".intro__title > div", { autoAlpha: 0 }); // 초기에 텍스트를 숨김
 
-    // 각 title에 대한 설정을 가져옵니다.
-    const titles = document.querySelectorAll('.intro__title > div');
+    var tl = gsap.timeline();
 
-    // 각 title을 순서대로 설정합니다.
-    titles.forEach((title, index) => {
-      setTimeout(() => {
-        gsap.fromTo(
-          title,
-          {
-            opacity: 0, // 초기 투명도를 0으로 설정하여 숨김
-            y: 20,      // 초기 위치를 아래로 설정
-          },
-          {
-            opacity: 1, // 최종 투명도를 1로 설정하여 나타남
-            y: 0,       // 최종 위치를 위로 설정
-            ease: 'power2.out',  // 이징 설정
-            duration: 1,          // 애니메이션의 지속 시간을 1초로 설정
-          }
-        );
-      }, index * 1000); // 1초 간격으로 각 title에 대한 딜레이 설정
-    });
+    tl.to(".title1", { duration: 1, autoAlpha: 1, delay: 1 })
+      .to(".title2", { duration: 1, autoAlpha: 1 }, "+=0.2")
+      .to(".title3", { duration: 1, autoAlpha: 1 }, "+=0.2")
+      .to(".title4", { duration: 1, autoAlpha: 1 }, "+=0.1");
   </script>
   <!-- fullscreen menu -->
   <script src="assets/js/classie.js"></script>
