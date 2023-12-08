@@ -12,6 +12,12 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="./assets/js/modernizr.custom.js"></script>
+  <style>
+    /* option */
+    .split>span {
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body>
@@ -65,14 +71,14 @@
         <img class="rotating-img" src="assets/img/star.svg" alt="별" aria-hidden="true" />
       </div>
       <div class="about__text1">
-        <div>안녕하세요! 저는 정해연이라고 합니다.</div>
-        <div>
+        <div class="split">안녕하세요! 저는 정해연이라고 합니다.</div>
+        <div class="split">
           개발자분야에서의 새로운 도전정신을 갖고 있는 열정적인 신입
           개발자입니다.
         </div>
-        <div>끊임없는 도전과 성장을 통해 제 실력을 향상시키고,</div>
-        <div>기술적으로 꾸준히 발전하는 개발자로 성장하겠습니다.</div>
-        <div>기회를 주셔서 감사합니다.</div>
+        <div class="split">끊임없는 도전과 성장을 통해 제 실력을 향상시키고,</div>
+        <div class="split">기술적으로 꾸준히 발전하는 개발자로 성장하겠습니다.</div>
+        <div class="split">기회를 주셔서 감사합니다.</div>
       </div>
       <div class="about__img2">
         <img class="rotating-img2" src="assets/img/ExploreMore.png" alt="ExploreMore" class="rotating-img"
@@ -80,6 +86,190 @@
         <div class="about__text2">creative Developer</div>
       </div>
     </section>
+
+    <div class="flow-container">
+      <div class="flow-text">
+        <div class="flow-wrap">portfolio work &nbsp;</div>
+        <div class="flow-wrap">portfolio work &nbsp;</div>
+        <div class="flow-wrap">portfolio work &nbsp;</div>
+        <div class="flow-wrap">portfolio work &nbsp;</div>
+      </div>
+    </div>
+    <!-- flow(port) -->
+
+    <section id="port" class="parallax__cont">
+      <section id="section1" class="parallax__item">
+        <figure class="parallax__item__imgWrap reveal reveal_RTL">
+          <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.5">GuitarYouTube</p>
+        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.8">
+          리액트를 이용하여 작업한사이트입니다.<br>node.js를 기반으로<br>서버 셋팅 후 firebace에 배포하여 작업하였습니다.
+        </p>
+        <div class="links">
+          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+          <div class="view__link"><a href="#" class="btn">View</a></div>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2" class="parallax__item">
+        <figure class="parallax__item__imgWrap reveal reveal_LTR">
+          <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.5">Quiz</p>
+        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay=" 0.8">
+          Javascript를 활용하여 만든 퀴즈사이트입니다. 7가지 단계별로 퀴즈 스타일이 다르며<br>
+          최종적으로 Fetch API로부터 Json퀴즈내용을 동적으로 불러와 사용자에게 제공하며,<br>
+          이벤트 리스너와 조건문을 활용하여 사용자 상호작용과 결과 표시 기능을 갖추고 있습니다.
+        </p>
+        <div class="links">
+          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+          <div class="view__link"><a href="#" class="btn">View</a></div>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3" class="parallax__item">
+        <figure class="parallax__item__imgWrap reveal reveal_RTL">
+          <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.5">myuduck</p>
+        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.8">
+          서울지역에 위치한 대극장의 뮤지컬 공연에 대한 정보를 볼 수 있는 사이트 입니다.<br>
+          대극장,뮤지컬,배우의 정보를 제공합니다.팀프로젝트로 진행되었으며<br>
+          PHP를 이용하여 제작한 사이트입니다. DB는 MySQL을 사용하였습니다.<br>
+          카카오지도 API를 연동하였고 뮤지컬과 배우 찜기능을 구현했습니다.
+        </p>
+        <div class="links">
+          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+          <div class="view__link"><a href="#" class="btn">View</a></div>
+        </div>
+      </section>
+      <!-- //section3 -->
+
+      <section id="section4" class="parallax__item">
+        <figure class=" parallax__item__imgWrap reveal reveal_LTR">
+          <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.5">Blog</p>
+        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay="0.8">
+          PHP를 이용하여 만든 개발 블로그입니다. DB는 MySQL을 사용하였습니다.<br>
+          CRUD (Create, Read, Update, Delete) 기능 즉, 글 작성 및 수정과 삭제가 가능하며, 댓글 추가
+          및 수정과 삭제가 가능합니다.<br>
+          댓글을 비동기적으로 추가, 수정, 삭제하기 위해 Ajax를 사용했습니다.
+        </p>
+        <div class="links">
+          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+          <div class="view__link"><a href="#" class="btn">View</a></div>
+        </div>
+      </section>
+      <!-- //section4 -->
+    </section>
+    <!-- //port -->
+
+    <div class="flow-container">
+      <div class="flow-text2">
+        <div class="flow-wrap2">
+          HTML5/CSS3/SASS/Javascript/JQuery/React.js/Node.js/MongoDB/MySQL/PHP/VSCode/Figma/POSTMAN/Git/
+        </div>
+        <div class="flow-wrap2">
+          HTML5/CSS3/SASS/Javascript/JQuery/React.js/Node.js/MongoDB/MySQL/PHP/VSCode/Figma/POSTMAN/Git/
+        </div>
+      </div>
+    </div>
+    <div class="flow-container2">
+      <div class="flow-text1">
+        <div class="flow-wrap1">tech stack tech stack&nbsp;</div>
+        <div class="flow-wrap1">tech stack tech stack&nbsp;</div>
+      </div>
+    </div>
+    <div class="flow-container">
+      <div class="flow-text2">
+        <div class="flow-wrap2">
+          HTML5/CSS3/SASS/Javascript/JQuery/React.js/Node.js/MongoDB/MySQL/PHP/VSCode/Figma/POSTMAN/Git/
+        </div>
+        <div class="flow-wrap2">
+          HTML5/CSS3/SASS/Javascript/JQuery/React.js/Node.js/MongoDB/MySQL/PHP/VSCode/Figma/POSTMAN/Git/
+        </div>
+      </div>
+    </div>
+    <!-- flow(tech) -->
+
+    <section id="tech">
+      <div class="techWrap">
+        <div class="tech__list">
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="HTML5" />
+            </div>
+            <div class="stack__name">HTML5</div>
+            <div class="stack__desc">웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="CSS3" />
+            </div>
+            <div class="stack__name">CSS3</div>
+            <div class="stack__desc">position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="SASS" />
+            </div>
+            <div class="stack__name">SASS</div>
+            <div class="stack__desc">SASS를 활용하여 유지보수성 높은 CSS 코드를 작성하고, 변수 및 중첩을 통해 효과적으로 구조화할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="Javascript" />
+            </div>
+            <div class="stack__name">Javascript</div>
+            <div class="stack__desc">Javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="jQuery" />
+            </div>
+            <div class="stack__name">jQuery</div>
+            <div class="stack__desc">JQuery를 활용하여 간편하고 효과적인 DOM 조작 및 이벤트 처리를 할 수 있으며, 애니메이션 및 UI 효과 등을 쉽게 추가할 수
+              있습니다.
+            </div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="React.js" />
+            </div>
+            <div class="stack__name">React.js</div>
+            <div class="stack__desc">다양한 hook을 활용하여 범용적이면서 재사용 가능한 컴포넌트를 설계할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="php" />
+            </div>
+            <div class="stack__name">php</div>
+            <div class="stack__desc">PHP를 활용하여 동적 웹페이지를 구현하고, 서버 측 로직을 다룰 수 있습니다. 데이터베이스 연동, 세션 처리, 폼 처리 등을 통해 다양한 기능을
+              구현할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="MongoDB" />
+            </div>
+            <div class="stack__name">MongoDB</div>
+            <div class="stack__desc">mongoose를 이용해 MongoDB의 스키마 정의와 데이터들을 처리할 수 있습니다.</div>
+          </div>
+          <div class="tech__stack">
+            <div class="stack__imgs">
+              <img class="stack__img1" src="" alt="MySQL" />
+            </div>
+            <div class="stack__name">MySQL</div>
+            <div class="stack__desc">MySQL을 통해 효율적인 데이터베이스 관리가 가능하며, 데이터 검색과 효율적인 데이터 추출을 위한 쿼리를 작성할 수 있습니다.</div>
+          </div>
+        </div>
+    </section>
+    <!-- //intro -->
+
+
 
 
   </main>
@@ -100,6 +290,7 @@
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
   <script>
     // about__img1
     // 회전할 이미지 선택
@@ -134,7 +325,7 @@
         start: '-=900',
         end: '+=4000',
         scrub: true,
-        markers: true
+        // markers: true
       },
     });
 
@@ -148,6 +339,7 @@
     exploreMoreImg.addEventListener('mouseleave', () => {
       exploreMoreImg.classList.remove('shaking');
     });
+
   </script>
   <script>
     // GSAP 애니메이션 코드
@@ -161,22 +353,31 @@
       .to(".title4", { duration: 0.5, autoAlpha: 1 }, "+=0.1");
   </script>
   <script>
-    //about__text1
-    gsap.registerPlugin(ScrollTrigger);
+    // split-type 사용하기
+    const targets = gsap.utils.toArray(".split");
 
-    gsap.from(".about__text1 div", {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      ease: "power4.out",
-      duration: 2.5,
-      scrollTrigger: {
-        trigger: "#about",
-        start: "top 40%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse",
-        // markers: true
-      },
+    targets.forEach(target => {
+      let SplitClient = new SplitType(target, { type: "lines, words, chars" });
+      let lines = SplitClient.lines;
+      let words = SplitClient.words;
+      let chars = SplitClient.chars;
+
+      gsap.from(words, {
+        yPercent: 100,
+        autoAlpha: 0,
+        duration: 1,
+        ease: "Expo.easeOut",
+        stagger: {
+          amount: 1,
+          from: "random"
+        },
+        scrollTrigger: {
+          trigger: target,
+          start: "top bottom",
+          end: "+=400",
+          markers: true,
+        }
+      });
     });
   </script>
   <!-- fullscreen menu -->

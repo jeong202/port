@@ -1,0 +1,193 @@
+<!-- 작동은되지만 원하는 방향이 아님 -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="포트폴리오 사이트입니다." />
+  <meta name="author" content="정해연(Jeonghaeyeon)" />
+  <meta name="keyword" content="포트폴리오, 바이트, 정해연, portfolio, vite, Jeonghaeyeon" />
+  <title>portfolio</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="./assets/js/modernizr.custom.js"></script>
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#header">헤더 영역 바로가기</a>
+    <a href="#intro">소개 영역 바로가기</a>
+    <a href="#port">포트폴리오 영역 바로가기</a>
+    <a href="#tech">기술스택 영역 바로가기</a>
+    <a href="#contact">연락처 영역 바로가기</a>
+    <a href="#footer">푸터 영역 바로가기</a>
+  </div>
+  <!-- //skip -->
+
+  <header id="header" role="banner">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="#">portfolio</a>
+      </div>
+      <div class="header__nav" id="trigger-overlay" role="navigation" aria-label="메인 메뉴">
+        <span>menu</span>
+      </div>
+    </div>
+    <div class="overlay overlay-slidedown">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#port">port</a></li>
+          <li><a href="#tech">tech</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- //header -->
+
+  <main id="main" role="main">
+    <section id="intro">
+      <div id="animation-container" class="intro__inner"></div>
+      <div class="intro__title">
+        <div class="title1">creative</div>
+        <div class="title2">DEVELOPER</div>
+        <div class="title3">experiences</div>
+        <div class="title4">WEB DEVELOPER</div>
+      </div>
+    </section>
+    <!-- //intro -->
+
+    <section id="about">
+      <div class="about__img1">
+        <img class="rotating-img" src="assets/img/star.svg" alt="별" aria-hidden="true" />
+      </div>
+      <div class="about__text1">
+        <div>안녕하세요! 저는 정해연이라고 합니다.</div>
+        <div>
+          개발자분야에서의 새로운 도전정신을 갖고 있는 열정적인 신입
+          개발자입니다.
+        </div>
+        <div>끊임없는 도전과 성장을 통해 제 실력을 향상시키고,</div>
+        <div>기술적으로 꾸준히 발전하는 개발자로 성장하겠습니다.</div>
+        <div>기회를 주셔서 감사합니다.</div>
+      </div>
+      <div class="about__img2">
+        <img class="rotating-img2" src="assets/img/ExploreMore.png" alt="ExploreMore" class="rotating-img"
+          aria-hidden="true" />
+        <div class="about__text2">creative Developer</div>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- //main -->
+
+  <footer id="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <span>GitHub</span>
+      </div>
+      <div>
+        <span>contact</span>
+      </div>
+    </div>
+  </footer>
+  <!-- //footer -->
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    // about__img1
+    // 회전할 이미지 선택
+    const rotatingImg = document.querySelector('.rotating-img');
+
+    // GSAP 애니메이션
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(rotatingImg, {
+      rotation: 720,
+      ease: 'ease-in-out',
+      scrollTrigger: {
+        trigger: rotatingImg,
+        start: '-=900',
+        end: '+=4000',
+        scrub: true,
+        // markers: true
+      },
+    });
+  </script>
+  <script>
+    //  about__img2
+    const rotatingImg2 = document.querySelector('.rotating-img2');
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(rotatingImg2, {
+      rotation: 720,
+      ease: 'ease-in-out',
+      scrollTrigger: {
+        trigger: rotatingImg2,
+        start: '-=900',
+        end: '+=4000',
+        scrub: true,
+        markers: true
+      },
+    });
+
+    // ExploreMore 이미지에 흔들리는 효과 추가
+    const exploreMoreImg = document.querySelector('.about__img2');
+
+    exploreMoreImg.addEventListener('mouseenter', () => {
+      exploreMoreImg.classList.add('shaking');
+    });
+
+    exploreMoreImg.addEventListener('mouseleave', () => {
+      exploreMoreImg.classList.remove('shaking');
+    });
+  </script>
+  <script>
+    // GSAP 애니메이션 코드
+    gsap.set(".intro__title > div", { autoAlpha: 0 }); // 초기에 텍스트를 숨김
+
+    var tl = gsap.timeline();
+
+    tl.to(".title1", { duration: 0.5, autoAlpha: 1, delay: 0.8 })
+      .to(".title2", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
+      .to(".title3", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
+      .to(".title4", { duration: 0.5, autoAlpha: 1 }, "+=0.1");
+  </script>
+  <script>
+    //about__text1
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".about__text1 div", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      ease: "power4.out",
+      duration: 2.5,
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 40%",
+        end: "bottom%",
+        toggleActions: "play none none reverse",
+        markers: true
+      },
+    });
+  </script>
+  <!-- fullscreen menu -->
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/demo1.js"></script>
+  <!-- three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
+  <!-- main.js -->
+  <script type="module" src="assets/js/main.js"></script>
+
+</body>
+
+</html>

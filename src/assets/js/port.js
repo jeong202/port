@@ -39,7 +39,7 @@ export function port() {
       trigger: item,
       start: "top bottom",
       end: "bottom top",
-      markers: false,
+      // markers: true,
       onEnter: () => { animate(item) }
     })
   });
