@@ -1,51 +1,77 @@
 /* flow-container */
 .flow-container2 {
-    margin-top: -100px
+  margin-top: -100px;
 }
 
 .flow-text1 {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 20rem;
-    font-weight: bold;
-    color: #9D9993;
-    margin-bottom: -100px;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20rem;
+  font-weight: bold;
+  color: #9d9993;
+  margin-bottom: -100px;
 }
 
 .flow-text2 {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 8rem;
-    font-weight: bold;
-    color: #9D9993;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #9d9993;
 }
 
 .flow-wrap1 {
-    animation: textLoop 18s linear infinite;
-    padding-right: 1.4881vw;
+  animation: textLoop 18s linear infinite;
+  padding-right: 1.4881vw;
 }
 
 .flow-wrap2 {
-    animation: textLoop 50s linear infinite;
-    padding-right: 1.4881vw;
+  animation: textLoop 50s linear infinite;
+  padding-right: 1.4881vw;
 }
 
 @keyframes textLoop {
-    0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 
-.container1 {
-    padding: 10px;
+/*  */
+#tech {
+  padding: 50px;
+}
+.tech__stack {
+  display: flex;
+  border-bottom: 1px solid var(--sub-color);
+  padding: 20px;
+}
+.tech__list {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.stack__imgs {
+  margin-right: 50px;
+}
+.stack__imgs > img {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.stack__name {
+  margin-right: 50px;
+  font-size: 48px;
+}
+.stack__desc {
+  font-family: var(--mainKor-font);
+  padding: 25px;
 }
