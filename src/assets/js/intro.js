@@ -1,4 +1,16 @@
 export function intro() {
+
+  // GSAP 애니메이션 코드
+  gsap.set(".intro__title > div", { autoAlpha: 0 }); // 초기에 텍스트를 숨김
+
+  var tl = gsap.timeline();
+
+  tl.to(".title1", { duration: 0.5, autoAlpha: 1, delay: 0.8 })
+    .to(".title2", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
+    .to(".title3", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
+    .to(".title4", { duration: 0.5, autoAlpha: 1 }, "+=0.1");
+
+  // three.js
   var mousePos = {
     x: 0.5,
     y: 0.5,
@@ -9,7 +21,7 @@ export function intro() {
       y: event.clientY / window.innerHeight,
     };
   });
-  var phase = 2.5;
+  var phase = 0;
 
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(

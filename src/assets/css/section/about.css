@@ -1,22 +1,28 @@
 .about__img1 {
     margin: 0 auto;
     margin-top: 10vw;
+    margin-bottom: 10vw;
     width: 3vh;
     height: 3vh;
 }
 
 .about__text1 {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    width: 30vw;
+    margin: 10vh auto;
     text-align: center;
+    word-break: keep-all;
+    color: #E9DFCE;
     font-family: "Gmarket Sans TTF";
     font-weight: 300;
-    line-height: 1.65;
-    overflow: hidden;
+    line-height: 1.6;
+
+
 }
 
 .about__img2 {
     margin: 0 auto;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
     width: 20vh;
     height: 20vh;
     position: relative;
