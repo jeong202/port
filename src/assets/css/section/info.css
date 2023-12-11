@@ -1,0 +1,98 @@
+#info {
+    width: 100%;
+    margin-top: 30vh;
+    overflow: hidden;
+}
+
+.info__inner {
+    padding: 16px;
+}
+
+.info__title {
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    line-height: 1;
+    border-bottom: 0.4vw solid var(--sub-color);
+    margin-bottom: 16px;
+}
+
+.info__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 4500px;
+}
+
+.info__item {
+    width: 500px;
+    height: 70vh;
+    background-color: var(--subBg100);
+    padding: 2.5rem;
+    margin-right: 20px;
+}
+
+.info__item.p1 {
+    background-color: var(--subBg100);
+}
+
+.info__item.p2 {
+    background-color: var(--subBg200);
+}
+
+.info__item.p3 {
+    background-color: var(--subBg300);
+}
+
+.info__item.p4 {
+    background-color: var(--subBg400);
+}
+
+.info__item.p5 {
+    background-color: var(--subBg500);
+}
+
+.info__item.p6 {
+    background-color: var(--subBg100);
+}
+
+.info__item.p7 {
+    background-color: var(--subBg200);
+}
+
+.info__item.p8 {
+    background-color: var(--subBg300);
+}
+
+.info__item.p9 {
+    background-color: var(--subBg400);
+}
+
+.info__item.p10 {
+    background-color: var(--subBg500);
+}
+
+.info__item .num {
+    font-size: 2rem;
+    font-family: var(--mainNum-font);
+}
+
+.info__item .img {
+    display: block;
+    border-radius: 5px;
+}
+
+.info__item .title {
+    font-family: "Gmarket Sans TTF";
+
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+.info__item .desc {
+    font-family: "Gmarket Sans TTF";
+    font-weight: 300;
+    font-size: 1rem;
+}

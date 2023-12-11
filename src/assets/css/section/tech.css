@@ -48,29 +48,36 @@
 
 /*  */
 #tech {
+  margin-top: 8vw;
   padding: 50px;
 }
+
 .tech__stack {
   display: flex;
   border-bottom: 1px solid var(--sub-color);
   padding: 20px;
 }
+
 .tech__list {
   max-width: 1700px;
   margin: 0 auto;
 }
+
 .stack__imgs {
   margin-right: 50px;
 }
-.stack__imgs > img {
+
+.stack__imgs>img {
   display: block;
   width: 70px;
   height: 70px;
 }
+
 .stack__name {
   margin-right: 50px;
   font-size: 48px;
 }
+
 .stack__desc {
   font-family: var(--mainKor-font);
   padding: 25px;

@@ -37,6 +37,7 @@ export function about() {
         y: 0,
         ease: "power1.out",
         stagger: 0.05,
+        duration: 2,  // 여기에 duration을 추가
         scrollTrigger: {
             trigger: ".split.t5 .char",
             start: "top 80%",
