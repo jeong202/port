@@ -4,6 +4,7 @@
 }
 
 .contact__title {
+    z-index: 10;
     text-align: center;
     font-size: 11vw;
     line-height: 0.7;
@@ -13,17 +14,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
-}
-
-#contactCanvas {
-    position: relative;
-    top: -1000px;
-    z-index: -10;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .contact__title .title1 {
@@ -50,13 +40,10 @@
     white-space: nowrap;
 }
 
-/*  */
-#contactCanvas {
-    position: relative;
-    top: -1000px;
+canvas {
     z-index: -10;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    filter: brightness(40%);
 }

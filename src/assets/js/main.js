@@ -3,6 +3,7 @@ import { port } from "./port.js";
 import { about } from "./about.js"
 import { tech } from "./tech.js"
 import { info } from "./info.js"
+import { contact } from "./contact.js";
 import { smooth } from "./smooth.js";
 
 window.addEventListener("load", function () {
@@ -11,5 +12,6 @@ window.addEventListener("load", function () {
   about();
   tech();
   info();
+  contact();
   smooth();
 });
