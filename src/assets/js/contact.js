@@ -28,7 +28,8 @@ export function contact() {
 
             var img = new Image();
             img.src =
-                "./assets/img/contact.jpg";
+                "/assets/img/contact.jpg";
+            // "/assets/img/contact.jpg";
             img.onload = function () {
                 var size = canvas.width;
                 var tempCanvas = document.createElement("canvas"),

@@ -46,4 +46,6 @@ canvas {
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(40%);
+    /* overflow: hidden; */
+    width: 100%;
 }
