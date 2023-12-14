@@ -270,12 +270,18 @@
     </section>
     <!-- //tech -->
 
+    <div class="flow-container">
+      <div class="flow-text">
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+      </div>
+    </div>
+    <!-- flow(port) -->
 
     <section id="info">
       <div class="info__inner">
-        <div class="info__title">
-          Nice to meet you
-        </div>
         <div class="info__wrap">
           <article class="info__item i1">
             <span class="num">about 01 .</span>
@@ -334,6 +340,46 @@
     </section>
     <!-- //info -->
 
+
+
+    <section id="comment">
+      <div class="comment__title">
+        Comment
+      </div>
+      <div class="comment__inner">
+        <div class="comment__input">
+          <form action="#">
+            <fieldset>
+              <legend class="blind">댓글쓰기</legend>
+              <div class="login">
+                <label for="commentName" class="blind">이름</label>
+                <input type="text" id="commentName" name="commentName" placeholder="이름" required>
+
+                <label for="commentPass" class="blind">비밀번호</label>
+                <input type="password" id="commentPass" name="commentPass" placeholder="비밀번호" required>
+              </div>
+              <label for="commentWrite" class="blind">댓글쓰기</label>
+              <input type="text" id="commentWrite" name="commentWrite" placeholder="댓글을 써주세요" required>
+
+              <button type="button" id="commentWriteBtn">댓글쓰기</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="comment__view">
+          <div class="text">
+            <span>
+              <span class="author">테스터</span>
+              <span class="data">2023.12.14</span>
+            </span>
+            <p>반갑습니다</p>
+            <a href="#" class="modify">수정</a>
+            <a href="#" class="delete">삭제</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //comment -->
+
     <section id="contact">
       <div class="contact__title">
         <div class="title1">creative</div>
@@ -364,136 +410,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
   <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
-  <!-- fullscreen menu -->
-  <!-- <script src="assets/js/classie.js"></script>
-  <script src="assets/js/demo1.js"></script> -->
-  <script>
-    /*!
- * classie - class helper functions
- * from bonzo https://github.com/ded/bonzo
- * 
- * classie.has( elem, 'my-class' ) -> true/false
- * classie.add( elem, 'my-new-class' )
- * classie.remove( elem, 'my-unwanted-class' )
- * classie.toggle( elem, 'my-class' )
- */
-
-    /*jshint browser: true, strict: true, undef: true */
-    /*global define: false */
-
-    (function (window) {
-
-      'use strict';
-
-      // class helper functions from bonzo https://github.com/ded/bonzo
-
-      function classReg(className) {
-        return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-      }
-
-      // classList support for class management
-      // altho to be fair, the api sucks because it won't accept multiple classes at once
-      var hasClass, addClass, removeClass;
-
-      if ('classList' in document.documentElement) {
-        hasClass = function (elem, c) {
-          return elem.classList.contains(c);
-        };
-        addClass = function (elem, c) {
-          elem.classList.add(c);
-        };
-        removeClass = function (elem, c) {
-          elem.classList.remove(c);
-        };
-      }
-      else {
-        hasClass = function (elem, c) {
-          return classReg(c).test(elem.className);
-        };
-        addClass = function (elem, c) {
-          if (!hasClass(elem, c)) {
-            elem.className = elem.className + ' ' + c;
-          }
-        };
-        removeClass = function (elem, c) {
-          elem.className = elem.className.replace(classReg(c), ' ');
-        };
-      }
-
-      function toggleClass(elem, c) {
-        var fn = hasClass(elem, c) ? removeClass : addClass;
-        fn(elem, c);
-      }
-
-      var classie = {
-        // full names
-        hasClass: hasClass,
-        addClass: addClass,
-        removeClass: removeClass,
-        toggleClass: toggleClass,
-        // short names
-        has: hasClass,
-        add: addClass,
-        remove: removeClass,
-        toggle: toggleClass
-      };
-
-      // transport
-      if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(classie);
-      } else {
-        // browser global
-        window.classie = classie;
-      }
-
-    })(window);
-
-  </script>
-  <script>
-    (function () {
-      var triggerBttn = document.getElementById('trigger-overlay'),
-        overlay = document.querySelector('div.overlay'),
-        closeBttn = overlay.querySelector('button.overlay-close');
-      transEndEventNames = {
-        'WebkitTransition': 'webkitTransitionEnd',
-        'MozTransition': 'transitionend',
-        'OTransition': 'oTransitionEnd',
-        'msTransition': 'MSTransitionEnd',
-        'transition': 'transitionend'
-      },
-        transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-        support = { transitions: Modernizr.csstransitions };
-
-      function toggleOverlay() {
-        if (classie.has(overlay, 'open')) {
-          classie.remove(overlay, 'open');
-          classie.add(overlay, 'close');
-          var onEndTransitionFn = function (ev) {
-            if (support.transitions) {
-              if (ev.propertyName !== 'visibility') return;
-              this.removeEventListener(transEndEventName, onEndTransitionFn);
-            }
-            classie.remove(overlay, 'close');
-          };
-          if (support.transitions) {
-            overlay.addEventListener(transEndEventName, onEndTransitionFn);
-          }
-          else {
-            onEndTransitionFn();
-          }
-        }
-        else if (!classie.has(overlay, 'close')) {
-          classie.add(overlay, 'open');
-        }
-      }
-
-      triggerBttn.addEventListener('click', toggleOverlay);
-      closeBttn.addEventListener('click', toggleOverlay);
-    })();
-  </script>
   <!-- three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
   <!-- main.js -->
   <script type="module" src="assets/js/main.js"></script>
+  <!-- fullscreen menu -->
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/demo1.js"></script>
 </body>

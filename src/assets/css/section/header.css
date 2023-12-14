@@ -79,21 +79,6 @@
   backface-visibility: hidden;
 }
 
-/* .overlay ul li a {
-  font-size: 54px;
-  font-weight: 300;
-  display: block;
-  color: var(--main-color);
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-  color: var(--main-color);
-  text-decoration-line: underline;
-  text-decoration-style: double;
-} */
 .overlay ul li a {
   font-size: 54px;
   font-weight: 300;

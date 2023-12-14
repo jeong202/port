@@ -46,10 +46,11 @@
   }
 }
 
-/*  */
+/* tech */
 #tech {
   margin-top: 8vw;
   padding: 50px;
+  margin-bottom: 15vw;
 }
 
 .tech__stack {
@@ -81,4 +82,46 @@
 .stack__desc {
   font-family: var(--mainKor-font);
   padding: 25px;
+}
+
+@media(max-width: 1000px) {
+  .stack__name {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+
+  .stack__desc {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  #tech {
+    padding: 10px;
+  }
+}
+
+@media(max-width: 810px) {
+  .stack__name {
+    margin-right: 20px;
+    font-size: 24px;
+    padding: 17px;
+  }
+
+  .stack__desc {
+    padding: 28px;
+    font-size: 12px;
+  }
+
+  #tech {
+    padding: 10px;
+  }
+}
+
+@media(max-width: 480px) {
+
+
+  .stack__desc {
+    display: none;
+  }
+
 }

@@ -1,0 +1,45 @@
+#comment {
+    height: 100vh;
+    padding: 16px;
+}
+
+.comment__title {
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    line-height: 1;
+    border-bottom: 0.4vw solid var(--sub-color);
+    margin-bottom: 16px;
+}
+
+.comment__inner {
+    padding: 16px;
+    display: flex;
+    gap: 10%;
+}
+
+.comment__input {
+    width: 50%;
+}
+
+.comment__view {
+    width: 50%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    gap: 2.5%;
+}
+
+#commentName {
+    width: 50%;
+}
+
+#commentPass {
+    width: 50%;
+}

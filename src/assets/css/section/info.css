@@ -1,6 +1,6 @@
 #info {
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 10vh;
     overflow: hidden;
     padding: 16px;
 
@@ -8,15 +8,6 @@
 
 .info__inner {
     padding: 16px;
-}
-
-.info__title {
-    width: 100%;
-    height: 5vw;
-    font-size: 4vw;
-    line-height: 1;
-    border-bottom: 0.4vw solid var(--sub-color);
-    margin-bottom: 16px;
 }
 
 .info__wrap {
