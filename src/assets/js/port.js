@@ -44,4 +44,54 @@ export function port() {
     })
   });
 
+  //배경색 효과
+  gsap.utils.toArray(".parallax__item").forEach(item => {
+    let color = item.getAttribute("data-bgcolor");
+    let currentColor = gsap.getProperty("body", "backgroundColor");
+
+    ScrollTrigger.create({
+      trigger: item,
+      start: "top 50%",
+      end: "bottom 20%", // 원하는 위치에 따라 이 값을 조정하세요
+      markers: true,
+
+      onEnter: () => gsap.to("body", {
+        backgroundColor: color,
+        duration: 1.4
+      }),
+      onLeave: () => {
+        if (item.id === "section1") {
+          gsap.to("body", {
+            backgroundColor: currentColor,
+            duration: 1.4
+          });
+        }
+        if (item.id === "section4") {
+          gsap.to("body", {
+            backgroundColor: currentColor,
+            duration: 1.4
+          });
+        }
+      },
+      onEnterBack: () => gsap.to("body", {
+        backgroundColor: color,
+        duration: 1.4
+      }),
+      onLeaveBack: () => {
+        if (item.id === "section1") {
+          gsap.to("body", {
+            backgroundColor: currentColor,
+            duration: 1.4
+          });
+        }
+        if (item.id === "section4") {
+          gsap.to("body", {
+            backgroundColor: currentColor,
+            duration: 1.4
+          });
+        }
+      }
+    });
+  });
+
 }

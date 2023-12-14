@@ -29,6 +29,7 @@
 }
 
 body {
+  --bg-color: #1c1e21;
   color: var(--sub-color);
-  background-color: var(--main-color);
+  background-color: var(--bg-color);
 }

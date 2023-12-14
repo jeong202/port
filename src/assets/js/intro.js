@@ -32,6 +32,7 @@ export function intro() {
   );
   camera.position.z = 30;
 
+
   // intro 섹션에 애니메이션이 나타날 영역에 렌더러 추가
   var container = document.getElementById("animation-container");
   var renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -42,8 +43,8 @@ export function intro() {
   var geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
   var materialGreen = new THREE.MeshBasicMaterial({
     transparent: true,
-    color: 0xffff00,
-    opacity: 0.4,
+    color: 0xFFFF00,
+    opacity: 1,
     side: THREE.DoubleSide,
   });
 
