@@ -6,7 +6,7 @@
     overflow: hidden;
     font-size: 20rem;
     font-weight: bold;
-    color: #9D9993;
+    color: var(--sub-color);
 }
 
 .flow-wrap {
@@ -41,6 +41,7 @@
     text-align: left;
     position: relative;
     padding-top: 15vw;
+    color: var(--main-colorn);
 }
 
 .parallax__item:nth-child(even) {
@@ -92,21 +93,25 @@
     font-size: 7vw;
     line-height: 1;
     margin-top: -5vw;
-    margin-left: -4vw;
+    margin-left: -5vw;
     z-index: 100;
     position: relative;
     word-break: keep-all;
+    color: #F5F5DC;
 }
 
 .parallax__item__desc2 {
+    font-size: 1.2vw;
     margin-top: 10px;
     font-family: "Gmarket Sans TTF";
+    /* font-family: 'IropkeBatang'; */
     font-weight: 300;
+    color: var(--main-color);
 }
 
 .parallax__item:nth-child(even) .parallax__item__desc {
     margin-left: auto;
-    margin-right: -4vw;
+    margin-right: -5vw;
 }
 
 #section4 .parallax__item__desc,

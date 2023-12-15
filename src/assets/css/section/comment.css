@@ -37,9 +37,81 @@ fieldset {
 }
 
 #commentName {
-    width: 50%;
+    padding: 15px 8px;
 }
 
 #commentPass {
-    width: 50%;
+    padding: 15px 8px;
+}
+
+textarea {
+    padding: 20px 15px;
+    height: 30%;
+    resize: none;
+}
+
+#commentName,
+#commentPass,
+textarea {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    border: none;
+    transform: all 3s;
+}
+
+button:hover {
+    background-color: #ebd9ba;
+    ;
+}
+
+.text {
+    margin-bottom: 16px;
+}
+
+.text>span {
+    position: relative;
+}
+
+.text>span::before {
+    content: '🎵';
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.author {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.data {
+    margin-left: 10px;
+    color: gray;
+}
+
+.mode {
+    padding: 5px;
+    margin: 10px 0;
+    border-top: 1px dashed var(--sub-color);
+    margin-bottom: 15px;
+}
+
+.modify,
+.delete {
+    color: var(--sub-color);
+}
+
+.modify:hover,
+.delete:hover {
+    text-decoration: underline;
 }

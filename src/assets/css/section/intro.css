@@ -8,9 +8,11 @@
 #animation-container {
   height: 100vh;
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
 .intro__title {
@@ -21,6 +23,7 @@
   z-index: 1;
   color: var(--sub-color);
   text-align: center;
+  font-family: "Partizeno";
 }
 
 .intro__title .title1 {

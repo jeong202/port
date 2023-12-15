@@ -3,12 +3,10 @@ export function intro() {
   // GSAP 애니메이션 코드
 
   gsap.set(".intro__title > div", { autoAlpha: 0 }); // 초기에 텍스트를 숨김
-  gsap.set("#animation-container", { autoAlpha: 0 }); // 초기에 three.js 를 숨김
 
 
   var tl = gsap.timeline();
-  tl.to("#animation-container", { duration: 0.8, autoAlpha: 1, delay: 0.8 })
-    .to(".title1", { duration: 0.5, autoAlpha: 1, delay: 0.4 })
+  tl.to(".title1", { duration: 0.5, autoAlpha: 1, delay: 0.8 })
     .to(".title2", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
     .to(".title3", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
     .to(".title4", { duration: 0.5, autoAlpha: 1 }, "+=0.1")
@@ -19,8 +17,8 @@ export function intro() {
 
   setTimeout(() => {
     let tl = gsap.timeline();
-    tl.to("#header", { top: 0, duration: 2.8 }, "a")
-    tl.to("#footer", { bottom: 0, duration: 2.8 }, "a")
+    tl.to("#header", { top: 0, duration: 0.4 }, "a")
+    tl.to("#footer", { bottom: 0, duration: 0.4 }, "a")
   }, 2500)
 
   // three.js

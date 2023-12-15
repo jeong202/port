@@ -7,6 +7,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* -----------------/Gmarket Sans TTF/------------------ */
 @font-face {
   font-family: "Gmarket Sans TTF";
@@ -34,6 +35,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* -----------------/Partizeno/------------------ */
 @font-face {
   font-family: "Partizeno";
@@ -43,6 +45,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /* -----------------/PP Hatton/------------------ */
 @font-face {
   font-family: "PP Hatton";
@@ -97,6 +100,7 @@
   font-style: italic;
   font-display: swap;
 }
+
 /* -----------------/Roboto/------------------ */
 @font-face {
   font-family: "Roboto";
@@ -203,5 +207,18 @@
     url("../../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------/IropkeBatang'/------------------ */
+@font-face {
+  font-family: 'IropkeBatang';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
   font-display: swap;
 }
