@@ -1,15 +1,15 @@
 /* -----------------/Abel/------------------ */
-@font-face {
+/* @font-face {
   font-family: "Abel";
   src: url("../../fonts/Abel-Regular.woff") format("woff2"),
     url("../../fonts/Abel-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* -----------------/Gmarket Sans TTF/------------------ */
-@font-face {
+/* @font-face {
   font-family: "Gmarket Sans TTF";
   src: url("../../fonts/GmarketSansTTFBold.woff2") format("woff2"),
     url("../../fonts/GmarketSansTTFBold.woff") format("woff");
@@ -34,20 +34,20 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* -----------------/Partizeno/------------------ */
-@font-face {
+/* @font-face {
   font-family: "Partizeno";
   src: url("../../fonts/PartizenoRegular.woff2") format("woff2"),
     url("../../fonts/PartizenoRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* -----------------/PP Hatton/------------------ */
-@font-face {
+/* @font-face {
   font-family: "PP Hatton";
   src: url("../../fonts/PPHatton-Bold.woff2") format("woff2"),
     url("../../fonts/PPHatton-Bold.woff") format("woff");
@@ -99,10 +99,10 @@
   font-weight: 200;
   font-style: italic;
   font-display: swap;
-}
+} */
 
 /* -----------------/Roboto/------------------ */
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   src: url("../../fonts/Roboto-Black.woff2") format("woff2"),
     url("../../fonts/Roboto-Black.woff") format("woff");
@@ -208,7 +208,7 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 /* -----------------/IropkeBatang'/------------------ */
 @font-face {

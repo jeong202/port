@@ -1,4 +1,4 @@
-<!-- 내가 적용한1 -->
+<!-- 원본 -->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -48,6 +48,7 @@
           <li><a href="#intro">intro</a></li>
           <li><a href="#port">port</a></li>
           <li><a href="#tech">tech</a></li>
+          <li><a href="#info">about</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -57,13 +58,13 @@
 
   <main id="main" role="main">
     <section id="intro">
-      <div id="animation-container" class="intro__inner"></div>
       <div class="intro__title">
-        <div class="title1">creative</div>
-        <div class="title2">DEVELOPER</div>
-        <div class="title3">experiences</div>
-        <div class="title4">WEB DEVELOPER</div>
+        <div class="title1 split t1">creative</div>
+        <div class="title2 split t2">DEVELOPER</div>
+        <div class="title3 split t3">experiences</div>
+        <div class="title4 split t4">WEB DEVELOPER</div>
       </div>
+      <div id="animation-container" class="intro__inner"></div>
     </section>
     <!-- //intro -->
 
@@ -72,14 +73,12 @@
         <img class="rotating-img" src="assets/img/star.svg" alt="별" aria-hidden="true" />
       </div>
       <div class="about__text1">
-        <div class="split">안녕하세요! 저는 정해연이라고 합니다.</div>
-        <div class="split">
-          개발자분야에서의 새로운 도전정신을 갖고 있는 열정적인 신입
-          개발자입니다.
-        </div>
-        <div class="split">끊임없는 도전과 성장을 통해 제 실력을 향상시키고,</div>
-        <div class="split">기술적으로 꾸준히 발전하는 개발자로 성장하겠습니다.</div>
-        <div class="split">기회를 주셔서 감사합니다.</div>
+        <p class="split t5">
+          안녕하세요 정해연입니다<br>
+          어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.<br>
+          신입의 열정과 도전정신을 깊숙히 새기며 배움에 있어 겸손함을 유지하며<br>
+          세부적인 곳까지 파고드는 개발자가 되겠습니다.
+        </p>
       </div>
       <div class="about__img2">
         <img class="rotating-img2" src="assets/img/ExploreMore.png" alt="ExploreMore" class="rotating-img"
@@ -87,81 +86,82 @@
         <div class="about__text2">creative Developer</div>
       </div>
     </section>
+    <!-- //about -->
 
     <div class="flow-container">
       <div class="flow-text">
         <div class="flow-wrap">portfolio work &nbsp;</div>
         <div class="flow-wrap">portfolio work &nbsp;</div>
         <div class="flow-wrap">portfolio work &nbsp;</div>
-        <div class="flow-wrap">portfolio work &nbsp;</div>
+        <div class="flow-wrap">portfolio work &nbsp;</div>>
       </div>
     </div>
     <!-- flow(port) -->
 
     <section id="port" class="parallax__cont">
-      <section id="section1" class="parallax__item">
+      <section id="section1" class="parallax__item" data-gradient="linear-gradient(to right,  #654321,#F5F5DC)">
         <figure class="parallax__item__imgWrap reveal reveal_RTL">
           <div class="parallax__item__img"></div>
         </figure>
-        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.5">GuitarYouTube</p>
-        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.8">
+        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.4">GuitarYouTube</p>
+        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.6">
           리액트를 이용하여 작업한사이트입니다.<br>node.js를 기반으로<br>서버 셋팅 후 firebace에 배포하여 작업하였습니다.
         </p>
-        <div class="links">
+        <div class="links reveal reveal_RTL" data-delay="0.6">
           <div class="git__link"><a href="#" class="btn">GitHub</a></div>
           <div class="view__link"><a href="#" class="btn">View</a></div>
         </div>
       </section>
       <!-- //section1 -->
 
-      <section id="section2" class="parallax__item">
+      <section id="section2" class="parallax__item" data-gradient="linear-gradient(to right, #F5F5DC, #8B0000)">
         <figure class="parallax__item__imgWrap reveal reveal_LTR">
           <div class="parallax__item__img"></div>
         </figure>
-        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.5">Quiz</p>
-        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay=" 0.8">
+        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.4">Quiz</p>
+        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay="0.6">
           Javascript를 활용하여 만든 퀴즈사이트입니다. 7가지 단계별로 퀴즈 스타일이 다르며<br>
           최종적으로 Fetch API로부터 Json퀴즈내용을 동적으로 불러와 사용자에게 제공하며,<br>
           이벤트 리스너와 조건문을 활용하여 사용자 상호작용과 결과 표시 기능을 갖추고 있습니다.
         </p>
-        <div class="links">
+        <div class="links reveal reveal_LTR" data-delay="0.6">
           <div class="git__link"><a href="#" class="btn">GitHub</a></div>
           <div class="view__link"><a href="#" class="btn">View</a></div>
         </div>
       </section>
       <!-- //section2 -->
 
-      <section id="section3" class="parallax__item">
+      <section id="section3" class="parallax__item" data-gradient="linear-gradient(to right, #001F3F,#F5F5DC)">
         <figure class="parallax__item__imgWrap reveal reveal_RTL">
           <div class="parallax__item__img"></div>
         </figure>
-        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.5">myuduck</p>
-        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.8">
+        <p class="parallax__item__desc reveal reveal_RTL" data-delay="0.4">myuduck</p>
+        <p class="parallax__item__desc2 reveal reveal_RTL" data-delay="0.6">
           서울지역에 위치한 대극장의 뮤지컬 공연에 대한 정보를 볼 수 있는 사이트 입니다.<br>
           대극장,뮤지컬,배우의 정보를 제공합니다.팀프로젝트로 진행되었으며<br>
           PHP를 이용하여 제작한 사이트입니다. DB는 MySQL을 사용하였습니다.<br>
           카카오지도 API를 연동하였고 뮤지컬과 배우 찜기능을 구현했습니다.
         </p>
-        <div class="links">
-          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+        <div class="links reveal reveal_RTL" data-delay="0.6">
+          <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
           <div class="view__link"><a href="#" class="btn">View</a></div>
         </div>
       </section>
       <!-- //section3 -->
 
-      <section id="section4" class="parallax__item">
+      <section id="section4" class="parallax__item" data-gradient="linear-gradient(to right, #F5F5DC, #008080)">
         <figure class=" parallax__item__imgWrap reveal reveal_LTR">
           <div class="parallax__item__img"></div>
         </figure>
-        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.5">Blog</p>
-        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay="0.8">
+        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.4">Blog</p>
+        <p class="parallax__item__desc2 reveal reveal_LTR" data-delay="0.6">
           PHP를 이용하여 만든 개발 블로그입니다. DB는 MySQL을 사용하였습니다.<br>
           CRUD (Create, Read, Update, Delete) 기능 즉, 글 작성 및 수정과 삭제가 가능하며, 댓글 추가
           및 수정과 삭제가 가능합니다.<br>
           댓글을 비동기적으로 추가, 수정, 삭제하기 위해 Ajax를 사용했습니다.
         </p>
-        <div class="links">
-          <div class="git__link"><a href="#" class="btn">GitHub</a></div>
+        <div class="links reveal reveal_LTR" data-delay="0.6">
+          <div class=" git__link"><a href="#" class="btn">GitHub</a></div>
           <div class="view__link"><a href="#" class="btn">View</a></div>
         </div>
       </section>
@@ -200,77 +200,181 @@
     <section id="tech">
       <div class="techWrap">
         <div class="tech__list">
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech01.png" alt="HTML5" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">HTML5</div>
             <div class="stack__desc">웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech02.png" alt="CSS3" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">CSS3</div>
             <div class="stack__desc">position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech03.png" alt="SASS" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">SASS</div>
             <div class="stack__desc">SASS를 활용하여 유지보수성 높은 CSS 코드를 작성하고, 변수 및 중첩을 통해 효과적으로 구조화할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech04.png" alt="Javascript" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">Javascript</div>
             <div class="stack__desc">Javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech05.png" alt="jQuery" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">jQuery</div>
             <div class="stack__desc">JQuery를 활용하여 간편하고 효과적인 DOM 조작 및 이벤트 처리를 할 수 있으며, 애니메이션 및 UI 효과 등을 쉽게 추가할 수
               있습니다.
             </div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech06.png" alt="React.js" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">React.js</div>
             <div class="stack__desc">다양한 hook을 활용하여 범용적이면서 재사용 가능한 컴포넌트를 설계할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech07.png" alt="php" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">php</div>
-            <div class="stack__desc">PHP를 활용하여 동적 웹페이지를 구현하고, 서버 측 로직을 다룰 수 있습니다. 데이터베이스 연동, 세션 처리, 폼 처리 등을 통해 다양한 기능을
+            <div class="stack__desc">PHP를 활용하여 동적 웹페이지를 구현하고, 서버 측 로직을 다룰 수 있습니다. 데이터베이스 연동, 세션 처리, 폼 처리 등을 통해 다양한
+              기능을
               구현할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech08.png" alt="MongoDB" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">MongoDB</div>
             <div class="stack__desc">mongoose를 이용해 MongoDB의 스키마 정의와 데이터들을 처리할 수 있습니다.</div>
           </div>
-          <div class="tech__stack">
-            <div class="stack__imgs">
-              <img class="stack__img1" src="./assets/img/tech09.png" alt="MySQL" />
-            </div>
+          <div class="tech__stack t6">
             <div class="stack__name">MySQL</div>
             <div class="stack__desc">MySQL을 통해 효율적인 데이터베이스 관리가 가능하며, 데이터 검색과 효율적인 데이터 추출을 위한 쿼리를 작성할 수 있습니다.</div>
           </div>
         </div>
     </section>
-    <!-- //intro -->
+    <!-- //tech -->
+
+    <div class="flow-container">
+      <div class="flow-text">
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+        <div class="flow-wrap">About Me &nbsp;</div>
+      </div>
+    </div>
+    <!-- flow(port) -->
+
+    <section id="info">
+      <div class="info__inner">
+        <div class="info__wrap">
+          <article class="info__item i1">
+            <span class="num">about 01 .</span>
+            <img src="assets/img/info01.jpg" alt="info1" />
+            <h3 class="title">첫걸음</h3>
+            <p class="desc">
+              AI와 코딩이 빠르게 주목받는 사회 분위기 속에서 저는 물류 풀필먼트 서비스 업체에 근무하면서 실제 현장에서 IT기술을 적극적으로 도입해 생산성이 획기적으로 향상되는 모습을 목격했습니다.
+              이에 호기심이 생기기 시작했으며, 회사의 온라인 쇼핑몰을 자주 보며 나도 이런 웹 사이트 만들고 싶다는 열망이 커졌습니다. 이 열망을 실현시키기 위해 관련 서적과 영상매체를 통해 기술적인
+              지식을
+              쌓아나가며, 꾸준한 학습을 통해 개발자로 성장하는 노력을 기울이고 있습니다.
+            </p>
+          </article>
+          <article class="info__item i2">
+            <span class="num">about 02 .</span>
+            <img src="assets/img/info02.jpg" alt="info2" />
+            <h3 class="title">열정과 도전</h3>
+            <p class="desc">
+              개발자로서의 길에 발을 디뎠을 때,
+              누군가가 새로운 기술과 끊임없는 학습의 여정이 저를 압박할거라고 그리고 문제에 직면했을 때 해결책을 찾는 과정이 스트레스로 다가올거라고 염려했습니다. 그러나 끊임없는 새로운 기술은 저를
+              매료시켰고 끈기 있게 해결책을 찾는 과정은 제게 큰 즐거움 이었습니다. 새로운 도전에도 두려움 없이 나아가고 매 프로젝트에서 새로운 지식과 기술을 습득하며, 그 과정에서 저만의 개발자로서의
+              자부심을 키워나가고 있습니다.
+            </p>
+          </article>
+          <article class="info__item i3">
+            <span class="num">about 03 .</span>
+            <img src="assets/img/info03.jpg" alt="skill3" />
+            <h3 class="title">성공으로 이끄는 힘</h3>
+            <p class="desc">
+              학원의 수업 과정동안 저는 저의 성실함을 무기로 임하였습니다.
+              성실함은 단순히 해결책을 찾는 것을 넘어 팀 내 협업에서도 중요한 역할을 합니다. 팀원들과의 유기적인 소통을 통해 각자의 아이디어를 교류하며 팀의 목표를 달성하기 위해 끊임없이 노력하는 것은
+              프로젝트를 성공으로 이끌어낼 수 있는 기반이 됩니다
+            </p>
+          </article>
+          <article class="info__item i4">
+            <span class="num">about 04 .</span>
+            <img src="assets/img/info05.jpg" alt="info5" />
+            <h3 class="title">긍정이라는 꽃</h3>
+            <p class="desc">
+              저는 항상 긍정적인 태도를 가지고 있습니다. 팀 내에서 협업을 원활하게 하고, 동료들에게 즐거운 업무 분위기를 조성하여 긍정의 향기를 퍼뜨리고 있습니다. 밝은 표정으로 주변에 긍정적인
+              에너지를 전달하며 동료들이 힘을 내도록 자극합니다. 목표를 달성하는 과정에서 겪는 수많은 실패를 성공을 향한 소중한 경험으로 받아들이고, 항상 긍정적인 마인드를 유지하며 도전에 임하고
+              있습니다.
+            </p>
+          </article>
+          <article class="info__item i5">
+            <span class="num">about 05 .</span>
+            <img src="assets/img/info05.jpg" alt="info5" />
+            <h3 class="title">협업과 효율을 높이는 코드의 미학</h3>
+            <p class="desc">
+              저는 좋은 코드에 대한 정의를 문법의 완벽함이 아닌, 유지보수와 협업에서의 효율성과 가독성에 두고 있습니다
+              외부의 빠른 변화에 대응해야하는 환경에서는 특히 가독성이 뛰어난 코드가 필수적이라고 생각합니다. 이는 팀 내 협업을 향상시키고, 다른 개발자들이 이해하기 쉽게 만들어 줍니다. 단순히 실행되는
+              코드를 넘어서 다른 이들과의 협업과 유지보수에 있어 효과적이고 효율적인 결과를 창출하는 데 중점을 두고 코드를 작성하기 위해 노력하고 있습니다
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- //info -->
 
 
+
+    <section id="comment">
+      <div class="comment__title">Comment</div>
+      <div class="comment__inner">
+        <div class="comment__input">
+          <fieldset>
+            <legend class="blind">댓글 작성</legend>
+            <div class="login">
+              <input type="text" id="commentName" placeholder="이름">
+              <input type="password" id="commentPass" placeholder="비밀번호">
+            </div>
+            <textarea placeholder="댓글을 입력하세요"></textarea>
+            <button type="button">댓글 작성</button>
+          </fieldset>
+        </div>
+        <div class="comment__view">
+          <div class="text">
+            <span>
+              <span class="author">테스터</span>
+              <span class="data">2023.12.14</span>
+            </span>
+            <p>반갑습니다</p>
+            <div class="mode">
+              <a href="#" class="modify">수정</a>
+              <a href="#" class="delete">삭제</a>
+            </div>
+          </div>
+          <div class="text">
+            <span>
+              <span class="author">테스터</span>
+              <span class="data">2023.12.14</span>
+            </span>
+            <p>반갑습니다</p>
+            <div class="mode">
+              <a href="#" class="modify">수정</a>
+              <a href="#" class="delete">삭제</a>
+            </div>
+          </div>
+          <div class="comment__pages">
+            <ul>
+              <li class="first"><a href="#">처음으로</a></li>
+              <li class="prev"><a href="#">이전</a></li>
+              <li class="next"><a href="#">다음</a></li>
+              <li class="last"><a href="#">마지막으로</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- //comment -->
+
+    <section id="contact">
+      <div class="contact__title">
+        <div class="title1">creative</div>
+        <div class="title2">DEVELOPER</div>
+        <div class="title3">Contact me</div>
+      </div>
+    </section>
+    <!-- //contact -->
 
 
   </main>
@@ -292,103 +396,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
-  <script>
-    // about__img1
-    // 회전할 이미지 선택
-    const rotatingImg = document.querySelector('.rotating-img');
-
-    // GSAP 애니메이션
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(rotatingImg, {
-      rotation: 720,
-      ease: 'ease-in-out',
-      scrollTrigger: {
-        trigger: rotatingImg,
-        start: '-=900',
-        end: '+=4000',
-        scrub: true,
-        // markers: true
-      },
-    });
-  </script>
-  <script>
-    //  about__img2
-    const rotatingImg2 = document.querySelector('.rotating-img2');
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(rotatingImg2, {
-      rotation: 720,
-      ease: 'ease-in-out',
-      scrollTrigger: {
-        trigger: rotatingImg2,
-        start: '-=900',
-        end: '+=4000',
-        scrub: true,
-        // markers: true
-      },
-    });
-
-    // ExploreMore 이미지에 흔들리는 효과 추가
-    const exploreMoreImg = document.querySelector('.about__img2');
-
-    exploreMoreImg.addEventListener('mouseenter', () => {
-      exploreMoreImg.classList.add('shaking');
-    });
-
-    exploreMoreImg.addEventListener('mouseleave', () => {
-      exploreMoreImg.classList.remove('shaking');
-    });
-
-  </script>
-  <script>
-    // GSAP 애니메이션 코드
-    gsap.set(".intro__title > div", { autoAlpha: 0 }); // 초기에 텍스트를 숨김
-
-    var tl = gsap.timeline();
-
-    tl.to(".title1", { duration: 0.5, autoAlpha: 1, delay: 0.8 })
-      .to(".title2", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
-      .to(".title3", { duration: 0.5, autoAlpha: 1 }, "+=0.2")
-      .to(".title4", { duration: 0.5, autoAlpha: 1 }, "+=0.1");
-  </script>
-  <script>
-    // split-type 사용하기
-    const targets = gsap.utils.toArray(".split");
-
-    targets.forEach(target => {
-      let SplitClient = new SplitType(target, { type: "lines, words, chars" });
-      let lines = SplitClient.lines;
-      let words = SplitClient.words;
-      let chars = SplitClient.chars;
-
-      gsap.from(words, {
-        yPercent: 100,
-        autoAlpha: 0,
-        duration: 1,
-        ease: "Expo.easeOut",
-        stagger: {
-          amount: 1,
-          from: "random"
-        },
-        scrollTrigger: {
-          trigger: target,
-          start: "top bottom",
-          end: "+=400",
-          markers: true,
-        }
-      });
-    });
-  </script>
-  <!-- fullscreen menu -->
-  <script src="assets/js/classie.js"></script>
-  <script src="assets/js/demo1.js"></script>
+  <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
   <!-- three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
   <!-- main.js -->
   <script type="module" src="assets/js/main.js"></script>
-
+  <!-- fullscreen menu -->
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/demo1.js"></script>
 </body>
-
-</html>
